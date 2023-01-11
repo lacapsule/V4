@@ -1,0 +1,123 @@
+@import url(reset.css);
+@import url(reset.css);
+@import url(styles.css);
+footer {
+    position: relative;
+    height: auto;
+    bottom: 0;
+    z-index: 1;
+}
+#footer {
+    background: linear-gradient(rgb(255, 253, 253), rgb(245, 245, 245));
+    transition: 2s ease-in-out; 
+    height: auto;
+    overflow: hidden;
+    margin: 0 0 2rem 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 1;
+}
+.footerHaut {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+.separation {
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, black, transparent);
+}
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 96%;
+    height: auto;
+    margin: 0 0 2em 0;
+    padding: 0;
+}
+#partenaires {
+    display: block;
+    position: relative;
+    width: auto;
+    height: 2.2em;
+    font-size: 2rem;
+    padding: 1%;
+    transition: 0.6s ease-in-out;
+    z-index: 1;
+}
+#partenaires:hover {
+    transform: scale(1.4);
+    z-index: 2;
+}
+a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+.footerBas {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 60vh;
+    margin: 0;
+    padding: 0;
+}
+.plan {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 38%;
+    height: 10em;
+    margin: 0 0 5em 5em;
+}
+.copyleft {
+    display: block;
+    position: fixed;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bolder;
+    font-style: oblique;
+    width: 100%;
+    height: 5em;
+    bottom: 0;
+}
+@media screen and (max-width: 950px) {
+    #partenaires {
+        display: block;
+        position: relative;
+        font-size: 1.6rem;
+        padding: 2%;
+        z-index: 1;
+    }
+    .footer {
+        width: 100vw;
+    }
+    .footerBas {
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        min-height: 40em;
+        margin-bottom: 10vh;
+    }
+    .plan {
+        justify-content: flex-start;
+        width: 100%;
+        margin: 0;
+        padding-left: 0.8em;
+    }
+    .copyleft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 5em;
+        padding: 0 2% 0 2%;
+    }
+}

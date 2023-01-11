@@ -1,0 +1,261 @@
+
+.titre {
+    text-align: center;
+    width: 100%;
+    height: 1.2em;
+}
+.titre>a {
+    font-size: .6em;
+}
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 10%;
+}
+li {
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.8em;
+}
+.haut {
+    margin: 0;
+    position: sticky;
+    width: 100vw; 
+    top: 0;
+    background: linear-gradient(90deg, transparent, whitesmoke, whitesmoke, whitesmoke, whitesmoke, whitesmoke,  transparent);
+    z-index: 10;
+}
+#adresse {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-1deg);
+    font-style: oblique;
+    width: 100%;
+    height: auto;
+}
+map>img {
+    border-radius: 50px;
+    filter: brightness(1.1) contrast(.8) saturate(.9);
+    width: 100%;
+}
+address {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 5em;
+    margin-top: 1em;
+    text-align: center;
+    font-size: .8em;
+}
+#presentation {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    transform: rotate(-1deg);
+    border-radius: 20px;
+}
+#presentation>h2 {
+    width: 70%;
+    text-align: justify;
+}
+#presentation>video {
+    object-fit: cover;
+    object-position: center;
+    height: 20em;
+    width: 100%;
+    border-radius: 50px;
+}
+.lieu {
+    background-color: #ffe400;
+}
+.metier {
+    background-color: #ff8400;
+}
+.bootcamp {
+    background-color: rgb(64, 49, 162);
+    color: whitesmoke;
+}
+.ateliers {
+    background-color: forestgreen;
+    color: whitesmoke;
+}
+.photos_metier {
+    width: 25%;
+}
+.photos_metier:hover {
+    transform: scale(1.2);
+}
+#photos>video {
+    width: 45%;
+    height: auto;
+}
+img[src="../media/assets/ulamir.webp"] {
+    background-color: whitesmoke;
+    border: 4px solid whitesmoke;
+    border-radius: 50%;
+}
+img[src="../media/img/2d/2d.webp"] {
+    width: 240px;
+    height: auto;
+}
+img[src="../media/img/ateliers/pair.webp"],
+img[src="../media/img/bootcamp/chrono.webp"] {
+    width: 140px;
+    height: auto;
+    padding: 1% 0 1% 0;
+}
+img[src="../media/assets/banner.webp"],
+img[src="../media/img/chantier/carteMorlaixCommunaute.webp"] {
+    box-shadow: none;
+    border-radius: 0;
+}
+img[src="../media/assets/rs/discord.webp"],
+img[src="../media/assets/rs/github.webp"],
+img[src="../media/assets/rs/linkedin.webp"],
+img[src="../media/assets/rs/twitter.webp"],
+img[src="../media/assets/rs/tik_tok.webp"] {
+    margin: 2%;
+}
+#bloc>h1 {
+    text-align: center;
+    width: 100vw;
+}
+#bloc>h2 {
+    text-align: justify;
+}
+.icones {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+#icones {
+    height: auto;
+    padding: 3% 0 3% 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .5), rgba(255, 255, 255, .6), rgba(255, 255, 255, .7), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 255, 255, .7), rgba(255, 255, 255, .6), rgba(255, 255, 255, .5), transparent);
+}
+#icones>img {
+    display: block;
+    width: auto;
+    height: 4em;
+}
+#icones>h3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 65%;
+    height: 4em;
+    text-align: left;
+    padding-left: 1em;
+}
+span#icones {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background: transparent;
+    width: 23%;
+    filter: contrast(1.2) brightness(0.9);
+}
+span>h2 {
+    text-align: center;
+}
+a {
+    color: rgb(64, 49, 162);
+}
+a, button {
+    cursor: pointer;
+}
+@media screen and (max-width: 950px){     
+.haut {
+    display: none;
+}
+.ancre {
+    height: 0;
+} 
+#bloc>h2 {
+    text-align: left;
+}
+#adresse {
+    align-items: space-around;
+    height: auto;
+}
+map>img {
+    transform: scale(2.5);
+    padding: 1.4em 0 1.4em 0;
+}
+address {
+    padding: 2rem 0 2rem 0;
+    margin: 2rem 0 2rem 0;
+    height: 2rem;
+}
+#icones {
+    height: auto;
+    padding: 3% 0 3% 0;
+    border-radius: 50px;
+    padding: 4% 2% 4% 2%;
+    background: rgb(255, 255, 255);
+}
+#presentation {
+    width: 88%;
+    margin: 1%;
+}
+#presentation>h2 {
+    width: 80%;
+    text-align: left;
+}
+#presentation>img[src="../media/assets/ulamir.webp"] {
+    width: 20%;
+    height: auto;
+    margin: 5% 20% 5% 20%;
+}
+img[src="../media/img/2d/2d.webp"] {
+    width: 280px;
+    height: auto;
+    margin-left: 10%;
+}
+img[src="../media/img/ateliers/pair.webp"] {
+    width: 200px;
+    height: auto;
+}
+img[src="../media/img/bootcamp/chrono.webp"] {
+    width: 200px;
+    height: auto;
+}
+ul {
+    padding-left: 0;
+}
+#icones>img {
+    display: block;
+    width: auto;
+    height: 4em;
+    padding: 2%;
+}
+span#icones {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+}
+.photos_metier {
+    width: 80%;
+    height: auto;
+}
+#photos>video {
+    width: 80vw;
+    height: auto;
+    margin-top: 2%;
+}
+}

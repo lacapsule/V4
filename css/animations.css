@@ -1,0 +1,30 @@
+@keyframes disparition {
+    from {
+        opacity: 100%;
+    }
+    40%{
+        opacity: 100%;
+        filter: saturate(1.2)
+    }
+    50% {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes apparition {
+    from {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 100%;
+    }
+    to {
+        opacity: 100%;
+        filter: saturate(1.2)
+    }
+}
