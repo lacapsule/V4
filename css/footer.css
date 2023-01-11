@@ -46,11 +46,15 @@ footer {
     height: 2.2em;
     font-size: 2rem;
     padding: 1%;
-    transition: 0.6s ease-in-out;
     z-index: 1;
 }
-#partenaires:hover {
-    transform: scale(1.4);
+#partenaires>img {
+    width: auto;
+    height: 2em;
+    transition: 0.6s ease-in-out;
+}
+#partenaires>img:hover {
+    transform: scale(1.1);
     z-index: 2;
 }
 a {
