@@ -177,6 +177,10 @@ a {
 a, button {
     cursor: pointer;
 }
+
+a>img {
+    width: 2em;
+}
 @media screen and (max-width: 950px){     
 .haut {
     display: none;
