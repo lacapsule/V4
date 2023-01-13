@@ -132,45 +132,61 @@ img[src="../media/assets/rs/tik_tok.webp"] {
 #bloc>h2 {
     text-align: justify;
 }
-.icones {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-around;
-}
-#icones {
-    height: auto;
-    padding: 3% 0 3% 0;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .5), rgba(255, 255, 255, .6), rgba(255, 255, 255, .7), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 255, 255, .7), rgba(255, 255, 255, .6), rgba(255, 255, 255, .5), transparent);
-}
-#icones>img {
-    display: block;
-    width: auto;
-    height: 4em;
-}
-#icones>h3 {
+#icones{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
+    height: auto;
+    padding: 3% 0 3% 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .5), rgba(255, 255, 255, .6), rgba(255, 255, 255, .7), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 255, 255, .7), rgba(255, 255, 255, .6), rgba(255, 255, 255, .5), transparent);
+    gap: 30px;
+}
+
+#item>h3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
     width: 65%;
     height: 4em;
     text-align: left;
     padding-left: 1em;
 }
-span#icones {
+span#item {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
     text-align: center;
     background: transparent;
-    width: 23%;
+    width: calc(50% - 30px);
     filter: contrast(1.2) brightness(0.9);
 }
 span>h2 {
     text-align: center;
 }
+.links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.links>a {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .5), rgba(255, 255, 255, .6), rgba(255, 255, 255, .7), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 255, 255, .7), rgba(255, 255, 255, .6), rgba(255, 255, 255, .5), transparent);
+    border-radius: 50%;
+    border: 1px solid #292929;
+    box-shadow: 1px 1px 1px hsla(0, 0%, 16%, .7),
+                2px 2px 2px hsla(0, 0%, 16%, .5),
+                3px 3px 3px hsla(0, 0%, 16%, .3),
+                inset 3px 3px 3px hsla(0, 0%, 100%, .9);
+    padding: 10px;
+}
+
 a {
     color: rgb(64, 49, 162);
 }
@@ -181,6 +197,15 @@ a, button {
 a>img {
     width: 2em;
 }
+
+
+/* ##########################################
+#                                           #
+#                 RESPONSIVE                #
+#                                           #
+############################################# */
+
+
 @media screen and (max-width: 950px){     
 .haut {
     display: none;
@@ -246,9 +271,9 @@ ul {
     height: 4em;
     padding: 2%;
 }
-span#icones {
+span#item {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: flex-start;
     width: 80%;
